@@ -65,13 +65,14 @@ celery -A invitation_manager worker -l info
               ...
          ]
       
-      METHOD: POST
-      HEADER: Authorization Token <token>
-      Request Body:
+      
+       METHOD: POST
+       HEADER: Authorization Token <token>
+        Body:
               {
                 "email": "asd@example.com"
                }
-      Response:
+       Response:
              {
               'id': <str>, 
               'createdTime': <str iso 8601 format>,
